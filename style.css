@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #111;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px;
+  box-sizing: border-box;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  border-bottom: 2px solid #444;
+  font-size: 16px;
+  padding: 12px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  text-align: right;
+  margin-bottom: 15px;
+
+  /* نلغي الاوتوكومبليت والأوتوفيل المزعج */
+  caret-color: #2ecc71;
+}
+
+.input-area:-webkit-autofill,
+.input-area:-webkit-autofill:focus {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.send-button, .clear-button {
+  padding: 10px 25px;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-button {
+  background-color: #e74c3c;
+}
+
+.send-button:hover {
+  background-color: #2980b9;
+}
+
+.clear-button:hover {
+  background-color: #c0392b;
+}
+
+.response-card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
+  text-align: right;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.response-text {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #ddd;
+}
+
+.copy-button {
+  margin-top: 15px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-button:hover {
+  background-color: #27ae60;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding-top: 10px;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease-in-out;
+}

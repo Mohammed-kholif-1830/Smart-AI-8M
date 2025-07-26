@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مساعدك الذكي</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container fade-in">
+    <div class="subtitle">
+      <i class="fas fa-brain"></i>
+      مساعدك الذكي الخاص
+    </div>
+
+    <input type="text" id="question" class="input-area" placeholder="اكتب سؤالك هنا...">
+
+    <div class="button-row">
+      <button class="send-button" onclick="askAI()">
+        <i class="fas fa-paper-plane"></i> إرسال
+      </button>
+      <button class="clear-button" onclick="clearAll()">
+        <i class="fas fa-eraser"></i> مسح
+      </button>
+    </div>
+
+    <footer>
+      Mohammed Magdy @
+    </footer>
+
+    <div id="response-card" class="response-card" style="display: none;">
+      <div id="response" class="response-text"></div>
+      <button class="copy-button" onclick="copyResponse()">
+        <i class="fas fa-copy"></i> نسخ الرد
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
